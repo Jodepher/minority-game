@@ -1,13 +1,17 @@
 import Footer from "./Components/Footer/index.jsx";
 import './index.css';
+import HomePage from "./Pages/HomePage/index.jsx";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
     return (
         <div>
-
-                <h1>Minority Game</h1>
-                <p>tagline</p>
-        <Footer />
+            <BrowserRouter>
+                <Routes>
+                   <Route path="/" element={<HomePage />} />
+                </Routes>
+                <Footer />
+            </BrowserRouter>
         </div>
     )
 }
