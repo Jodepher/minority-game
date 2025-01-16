@@ -1,0 +1,17 @@
+body {
+    max-width: 926px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+
+
+
+@media screen and (min-device-width: 926px) {
+
+    body {
+        max-width: 1280px;
+    }
+}
