@@ -5,18 +5,18 @@ import CreateButton from "../../Components/CreateButton/index.jsx";
 function HomePage() {
     return (
         <>
-            <div id={"top"} className="title" >
-                <h1>Minority Game</h1>
-                <p>tagline</p>
+            <div id="top">
+                <h1 className="text-6xl pt-28 pb-12">Minority Game</h1>
+                <p className="pb-38">tagline</p>
+            </div>
+            <br></br>
+            <div id="buttons" className="pb-28 pt-20 flex">
+                <PlayButton className="pb-8" link="/play" text="PLAY"></PlayButton>
+                <CardsButton className=" " link="/cards" text="CARDS"></CardsButton>
+                <CreateButton className=" " link="/create" text="CREATE"></CreateButton>
             </div>
 
-            <div id={"buttons"} className="buttons">
-                <PlayButton link="/play" text="PLAY"></PlayButton>
-                <CardsButton link="/cards" text="CARDS"></CardsButton>
-                <CreateButton link="/create" text="CREATE"></CreateButton>
-            </div>
-
-            <div id={"instructions"} className="cards">
+            <div id="instructions" className="cards">
                 <h2>Instructions</h2>
                 <p>The party game Minority requires a minimum of 3 players who are ready to debate over deliberately
                     controversial topics.<br></br>
