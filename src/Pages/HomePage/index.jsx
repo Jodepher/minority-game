@@ -6,19 +6,21 @@ function HomePage() {
     return (
         <>
             <div id="top">
-                <h1 className="text-6xl pt-28 pb-12">Minority Game</h1>
-                <p className="pb-38">tagline</p>
+                <h1 className="text-7xl pt-28 pb-8">Minority</h1>
+                <p className="pb-38">the controversial card game</p>
             </div>
             <br></br>
-            <div id="buttons" className="pb-28 pt-20 flex">
-                <PlayButton className="pb-8" link="/play" text="PLAY"></PlayButton>
-                <CardsButton className=" " link="/cards" text="CARDS"></CardsButton>
-                <CreateButton className=" " link="/create" text="CREATE"></CreateButton>
+            <div id="buttons" className="container m-auto flex flex-col items-center space-y-10 2 pb-32 pt-20">
+                <PlayButton className="text-center text-2xl" link="/play" text="PLAY"></PlayButton>
+                <div className="flex space-x-12">
+                    <CardsButton link="/cards" text="CARDS"></CardsButton>
+                    <CreateButton link="/create" text="CREATE"></CreateButton>
+                </div>
             </div>
 
-            <div id="instructions" className="cards">
-                <h2>Instructions</h2>
-                <p>The party game Minority requires a minimum of 3 players who are ready to debate over deliberately
+            <div id="instructions" className="">
+                <h2 className="text-2xl pb-6">Instructions</h2>
+                <p className="pb-12">The party game Minority requires a minimum of 3 players who are ready to debate over deliberately
                     controversial topics.<br></br>
                     The aim of the game is to read aloud one of the selected cards that will be presented to you (or come up with your
                     own) and decide if you agree or disagree with the statement.<br></br>
