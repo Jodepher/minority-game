@@ -5,7 +5,8 @@ import CreateButton from "../../Components/CreateButton/index.jsx";
 function HomePage() {
     return (
         <>
-            <div id="top">
+        <div id="top"></div>
+            <div>
                 <h1 className="text-7xl pt-28 pb-8">Minority</h1>
                 <p className="pb-38">the controversial card game</p>
             </div>
