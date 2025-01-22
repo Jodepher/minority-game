@@ -1,22 +1,26 @@
 import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
+import Header from "../../Components/Header/index.jsx";
 
 function Play() {
     const { id } = useParams()
-    const [cardId, setCardId] = useState("")
+    const [cardId, setCardId] = useState([])
 
     useEffect(() => {
         fetch(`link ${id}`)
             .then(res => res.json())
             .then(data => {
-                const card = data.data.card
-                setCardId(card.id)
+                console.log(data)
+                // const card = data.card
+                // setCardId(card.id)
             })
     }, [id]);
 
     return (
         <div>
-        {/*    <button> for DRAW NEXT */}
+            <Header />
+            {/*    <button> for DRAW NEXT */}
+            {/*    {cards.map(card => <img key={card.id}>>{card.id}</>*/}
         </div>
     )
 }
