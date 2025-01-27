@@ -46,7 +46,7 @@ function Play() {
                             id={card.id}
                             description={card.description} />)
                     ) : (
-                        <p>Loading...</p>
+                        <p className="pb-20 text-amber-800 font-sans motion-preset-oscillate motion-duration-2000">Loading...</p>
                     )}
             </section>
         </div>

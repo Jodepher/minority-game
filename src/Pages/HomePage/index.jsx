@@ -8,7 +8,7 @@ function HomePage() {
         <div id="top"></div>
             <div>
                 <h1 className="text-7xl pt-28 pb-8">Minority</h1>
-                <p className="pb-38">the controversial card game</p>
+                <p className="pb-38 m-auto overflow-hidden motion-preset-typewriter-[30] motion-duration-[7s] motion-loop-twice">the controversial card game</p>
             </div>
             <br></br>
             <div id="buttons" className="container m-auto flex flex-col items-center space-y-10 2 pb-32 pt-20">
@@ -21,7 +21,7 @@ function HomePage() {
 
             <div id="instructions" className="">
                 <h2 className="text-2xl pb-6">Instructions</h2>
-                <p className="pb-12">The party game Minority requires a minimum of 3 players who are ready to debate over deliberately
+                <p className="pb-12">The party game Minority requires a minimum of 3 players who are willing to debate over deliberately
                     controversial topics.<br></br>
                     The aim of the game is to read aloud one of the selected cards that will be presented to you (or come up with your
                     own) and decide if you agree or disagree with the statement.<br></br>
