@@ -1,10 +1,13 @@
 import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import Header from "../../Components/Header/index.jsx";
+import Card from "../../Components/Card/index.jsx";
+import card from "../../Components/Card/index.jsx";
+import Cards from "../Cards/index.jsx";
 
 function Play() {
     const { id } = useParams()
-    const [cardId, setCardId] = useState([])
+    const [cards, setCards] = useState([])
 
     useEffect(() => {
         fetch(`link ${id}`)
@@ -16,11 +19,36 @@ function Play() {
             })
     }, [id]);
 
+    // OR could do
+    // function fetchCard() {
+    //         fetch(`link ${id}`)
+    //             .then(res => res.json())
+    //             .then(data => {
+    //                 console.log(data)
+    //                 // const card = data.card
+    //                 // setCardId(card.id)
+    // }
+    // useEffect(fetchCard, [])
+    //
+    // function nextCard() {
+    //      return (
+    //          <
+    //
+
+
     return (
         <div>
             <Header />
-            {/*    <button> for DRAW NEXT */}
-            {/*    {cards.map(card => <img key={card.id}>>{card.id}</>*/}
+            <section className="m-2.5 p-2">
+                {Cards.length > 0 ? (
+                    cards.map(card => <Card
+                            key={card.id}
+                            id={card.id}
+                            description={card.description} />)
+                    ) : (
+                        <p>Loading...</p>
+                    )}
+            </section>
         </div>
     )
 }

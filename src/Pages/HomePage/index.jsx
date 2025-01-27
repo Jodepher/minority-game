@@ -1,6 +1,6 @@
-import PlayButton from "../../Components/PlayButton/index.jsx";
-import CardsButton from "../../Components/CardsButton/index.jsx";
-import CreateButton from "../../Components/CreateButton/index.jsx";
+import PlayButton from "../../Components/Buttons/PlayButton/index.jsx";
+import CardsButton from "../../Components/Buttons/CardsButton/index.jsx";
+import CreateButton from "../../Components/Buttons/CreateButton/index.jsx";
 
 function HomePage() {
     return (

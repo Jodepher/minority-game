@@ -1,4 +1,4 @@
-import JumpToTopButton from "../JumpToTopButton/index.jsx";
+import JumpToTopButton from "../Buttons/JumpToTopButton/index.jsx";
 
 function Footer() {
     return (
