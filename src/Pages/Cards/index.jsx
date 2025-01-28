@@ -10,8 +10,6 @@ function Cards() {
                 .then(res => res.json())
                 .then(data => {
                     setAllCards(data);
-                    // const card = data.card
-                    // setCardId(card.id)
                 })
                 .catch((err) => {
                     console.error("Error getting cards", err);
@@ -21,7 +19,7 @@ function Cards() {
         return (
             <div className="cards-page">
                 <Header/>
-                <section>
+                <section className="cards-display grid grid-cols-5 gap-y-20">
                     {allCards.map(card => {
                         return (
                             <Card

@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import Header from "../../Components/Header/index.jsx";
 import Card from "../../Components/Card/index.jsx";
 import Cards from "../Cards/index.jsx";
+import NextCardButton from "../../Components/Buttons/NextCardButton/index.jsx";
 
 function Play() {
     const { id } = useParams()
@@ -12,13 +13,11 @@ function Play() {
         fetch(`link ${id}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
-                // const card = data.card
-                // setCardId(card.id)
+                setCards(data)
             })
     }, [id]);
 
-    function nextCard() {
+    function handleNextCard() {
 
     }
 
@@ -36,7 +35,7 @@ function Play() {
                         <p className="pb-20 font-sans motion-preset-oscillate motion-duration-2000">Loading...</p>
                     )}
             </section>
-            <button></button>
+            <NextCardButton text={"Next Card"} />
         </div>
     )
 }
