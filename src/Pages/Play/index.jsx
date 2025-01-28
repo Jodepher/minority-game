@@ -2,7 +2,6 @@ import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import Header from "../../Components/Header/index.jsx";
 import Card from "../../Components/Card/index.jsx";
-import card from "../../Components/Card/index.jsx";
 import Cards from "../Cards/index.jsx";
 
 function Play() {
@@ -19,22 +18,9 @@ function Play() {
             })
     }, [id]);
 
-    // OR could do
-    // function fetchCard() {
-    //         fetch(`link ${id}`)
-    //             .then(res => res.json())
-    //             .then(data => {
-    //                 console.log(data)
-    //                 // const card = data.card
-    //                 // setCardId(card.id)
-    // }
-    // useEffect(fetchCard, [])
-    //
-    // function nextCard() {
-    //      return (
-    //          <
-    //
+    function nextCard() {
 
+    }
 
     return (
         <div>
@@ -44,11 +30,13 @@ function Play() {
                     cards.map(card => <Card
                             key={card.id}
                             id={card.id}
+                            title={card.title}
                             description={card.description} />)
                     ) : (
-                        <p className="pb-20 text-amber-800 font-sans motion-preset-oscillate motion-duration-2000">Loading...</p>
+                        <p className="pb-20 font-sans motion-preset-oscillate motion-duration-2000">Loading...</p>
                     )}
             </section>
+            <button></button>
         </div>
     )
 }
