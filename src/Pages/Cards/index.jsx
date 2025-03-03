@@ -1,12 +1,14 @@
 import Header from "../../Components/Header/index.jsx";
 import Card from "../../Components/Card/index.jsx";
 import {useEffect, useState} from "react";
+import {Link, useParams} from "react-router-dom";
 
 function Cards() {
+    const { id } = useParams();
     const [allCards, setAllCards] = useState([]);
 
         useEffect(() => {
-            fetch(`link`)
+            fetch(`link{id}`)
                 .then(res => res.json())
                 .then(data => {
                     setAllCards(data);
@@ -28,6 +30,7 @@ function Cards() {
                                 title={card.title}
                                 description={card.description}
                             />
+                        // <Link to={`/cards/${card.id}`}</Link>
                         )
                     })}
                 </section>

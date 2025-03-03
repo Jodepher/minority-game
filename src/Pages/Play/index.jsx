@@ -17,10 +17,6 @@ function Play() {
             })
     }, [id]);
 
-    function handleNextCard() {
-
-    }
-
     return (
         <div>
             <Header />
