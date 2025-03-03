@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 import {Link, useParams} from "react-router-dom";
 
 function Cards() {
-    const { id } = useParams();
+   // const { id } = useParams();
     const [allCards, setAllCards] = useState([]);
 
         useEffect(() => {

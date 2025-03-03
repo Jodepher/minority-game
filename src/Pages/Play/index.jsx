@@ -31,7 +31,7 @@ function Play() {
                         <p className="pb-20 font-sans motion-preset-oscillate motion-duration-2000">Loading...</p>
                     )}
             </section>
-            <NextCardButton text={"Next Card"} />
+            {/*<NextCardButton text={"Next Card"} />*/}
         </div>
     )
 }
